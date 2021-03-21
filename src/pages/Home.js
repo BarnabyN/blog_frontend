@@ -34,6 +34,15 @@ export default function Home() {
       });
   }, []);
 
+  if (posts === null) {
+    return (
+      <div>
+        <CustomNavbar />
+        <div className="main">Loading post...</div>
+      </div>
+    );
+  }
+
   return (
     <div className="reactWrapper">
       <CustomNavbar />
