@@ -24,7 +24,7 @@ export default function AboutPage() {
           <ul>
             <li>Machine learning</li>
             <li>Website design</li>
-            <li>Algorithms and their efficiency</li>
+            <li>Algorithm design</li>
           </ul>
           <li>Psychology</li>
           <ul>

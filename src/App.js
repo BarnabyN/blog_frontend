@@ -10,6 +10,7 @@ import AdminLogin from "./pages/AdminLogin";
 import AdminCreatePost from "./pages/AdminCreatePost";
 import AdminEditPost from "./pages/AdminEditPost";
 import AdminHome from "./pages/AdminHome";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
@@ -26,6 +27,9 @@ export default function App() {
         </Route>
         <Route path="/posts">
           <AllPostsPage />
+        </Route>
+        <Route path="/">
+          <Home />
         </Route>
         <Route path="/admin-login">
           <AdminLogin />

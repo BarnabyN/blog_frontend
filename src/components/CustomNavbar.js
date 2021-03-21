@@ -7,11 +7,12 @@ export default function CustomNavbar() {
   return (
     <div className="navbar">
       <nav expand="md" sticky="top">
-        <Link className="navbrand" to={"/posts"}>
+        <Link className="navbrand" to={"/"}>
           Barney Napier
         </Link>
         <span className="navtabs">
-          <CustomNavlink to="/posts" text="Home" />
+          <CustomNavlink to="/" text="Home" />
+          <CustomNavlink to="/posts" text="Posts" />
           <CustomNavlink to="/books" text="Books" />
           <CustomNavlink to="/about" text="About" />
         </span>

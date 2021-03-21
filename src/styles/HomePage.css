@@ -18,15 +18,30 @@
   color: gray;
 }
 
-.list-item {
-  text-decoration: none;
-  color: black;
-  margin-bottom: 5px;
-  font-weight: lighter;
+.div-postwrapper {
+  border-bottom: lightgray;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.list-item:hover {
+.post-title {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.post-title:hover {
   color: gray;
+}
+
+.post-subtitle {
+  display: block;
+  margin-bottom: 1px;
 }
 
 .post-info {
