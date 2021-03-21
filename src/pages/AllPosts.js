@@ -44,7 +44,6 @@ export default function AllPostsPage() {
               className="tagbutton"
               onClick={() => setTag(t)}
               style={{
-                // borderColor: tag === t ? "black" : "",
                 borderBottomColor: tag === t ? "black" : "transparent",
               }}
             >
@@ -52,30 +51,25 @@ export default function AllPostsPage() {
             </Link>
           ))}
         </div>
-        {posts
-          .filter((p) => {
-            if (tag === "All") {
-              return p;
-            } else {
-              return p.tags.includes(tag);
-            }
-          })
-          .map((p) => {
-            return (
-              <div className="div-postwrapper">
-                <Link className="post-title" to={`/post/${p.id}`}>
-                  {p.title}
-                </Link>
-                <div className="post-info">
-                  <span className="post-date">
-                    {p.date}&nbsp; &middot; &nbsp;
-                  </span>
-                  <span className="post-tags">{p.tags.join(", ")}</span>
-                </div>
-                <div dangerouslySetInnerHTML={{ __html: p.content }} />
-              </div>
-            );
-          })}
+        <ul>
+          {posts
+            .filter((p) => {
+              if (tag === "All") {
+                return p;
+              } else {
+                return p.tags.includes(tag);
+              }
+            })
+            .map((p) => {
+              return (
+                <li>
+                  <Link className="list-item" to={`/post/${p.id}`}>
+                    {p.title}
+                  </Link>
+                </li>
+              );
+            })}
+        </ul>
       </div>
     </div>
   );
