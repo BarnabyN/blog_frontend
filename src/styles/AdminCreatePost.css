@@ -1,0 +1,15 @@
+.alltags-list {
+  display: block;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.logout-button {
+  color: white;
+  background-color: rgba(223, 16, 16, 0.838);
+  border-color: white;
+}
+
+.logout-button:hover {
+  color: darkred;
+}
