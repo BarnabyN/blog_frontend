@@ -1,3 +1,3 @@
-export const dbstring = "https:bnapier-site.herokuapp.com";
+export const dbstring = "https://bnapier-server.herokuapp.com/";
 
 export default dbstring;

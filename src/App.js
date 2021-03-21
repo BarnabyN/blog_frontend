@@ -16,6 +16,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <Switch>
+        <Route path="/home">
+          <Home />
+        </Route>
         <Route path="/about">
           <AboutPage />
         </Route>
@@ -28,9 +31,7 @@ export default function App() {
         <Route path="/posts">
           <AllPostsPage />
         </Route>
-        <Route path="/">
-          <Home />
-        </Route>
+
         <Route path="/admin-login">
           <AdminLogin />
         </Route>
