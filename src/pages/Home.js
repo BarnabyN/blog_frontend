@@ -72,9 +72,7 @@ export default function Home() {
           .map((p) => {
             return (
               <div className="div-postwrapper">
-                <Link className="post-title" to={`/post/${p.id}`}>
-                  {p.title}
-                </Link>
+                <span className="post-title">{p.title}</span>
                 <div className="post-info">
                   <span className="post-date">
                     {p.date}&nbsp; &middot; &nbsp;
