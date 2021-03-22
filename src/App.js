@@ -44,7 +44,7 @@ export default function App() {
         <Route path="/editpost/:id">
           <AdminEditPost />
         </Route>
-        <Redirect from="*" to="/posts" />
+        <Redirect from="*" to="/home" />
       </Switch>
     </BrowserRouter>
   );
