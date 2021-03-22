@@ -35,10 +35,6 @@
   text-transform: uppercase;
 }
 
-.post-title:hover {
-  color: gray;
-}
-
 .post-subtitle {
   display: block;
   margin-bottom: 1px;
