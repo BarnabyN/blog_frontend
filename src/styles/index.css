@@ -11,6 +11,7 @@ body {
 .content {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 3% 0 3%;
   float: none;
   margin-bottom: 5%;
   line-height: 30px;
