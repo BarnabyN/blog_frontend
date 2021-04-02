@@ -62,6 +62,27 @@ export default function AdminEditPost() {
       });
   }, []);
 
+  function deletePost(e) {
+    e.preventDefault();
+
+    fetch(dbstring + `/deletepost/${id}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        title,
+        date,
+        currentAdmin,
+        tags,
+        content,
+        id,
+      }),
+    })
+      .then((res) => res.json())
+      .then(history.push("/admin"));
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
 
@@ -134,6 +155,9 @@ export default function AdminEditPost() {
           }}
         >
           Log out
+        </button>
+        <button className="logout-button" onClick={deletePost}>
+          Delete Post
         </button>
       </div>
     </div>
