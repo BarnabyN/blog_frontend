@@ -22,9 +22,6 @@ export default function App() {
         <Route path="/about">
           <AboutPage />
         </Route>
-        <Route path="/books">
-          <BooksPage />
-        </Route>
         <Route path="/post/:id">
           <PostPage />
         </Route>
