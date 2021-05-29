@@ -15,17 +15,14 @@ export default function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/home">
-          <Home />
+        <Route path="/">
+          <AllPostsPage />
         </Route>
         <Route path="/about">
           <AboutPage />
         </Route>
         <Route path="/post/:id">
           <PostPage />
-        </Route>
-        <Route path="/posts">
-          <AllPostsPage />
         </Route>
         <Route path="/admin-login">
           <AdminLogin />
@@ -39,7 +36,7 @@ export default function App() {
         <Route path="/editpost/:id">
           <AdminEditPost />
         </Route>
-        <Redirect from="*" to="/home" />
+        <Redirect from="*" to="/" />
       </Switch>
     </BrowserRouter>
   );
