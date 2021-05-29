@@ -3,7 +3,6 @@ import React from "react";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
 import AboutPage from "./pages/About";
-import BooksPage from "./pages/Books";
 import PostPage from "./pages/Post";
 import AllPostsPage from "./pages/AllPosts";
 import AdminLogin from "./pages/AdminLogin";
@@ -28,7 +27,6 @@ export default function App() {
         <Route path="/posts">
           <AllPostsPage />
         </Route>
-
         <Route path="/admin-login">
           <AdminLogin />
         </Route>
