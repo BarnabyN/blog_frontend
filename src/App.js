@@ -15,7 +15,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/">
+        <Route path="/home">
           <AllPostsPage />
         </Route>
         <Route path="/about">
@@ -36,7 +36,7 @@ export default function App() {
         <Route path="/editpost/:id">
           <AdminEditPost />
         </Route>
-        <Redirect from="*" to="/" />
+        <Redirect from="*" to="/home" />
       </Switch>
     </BrowserRouter>
   );

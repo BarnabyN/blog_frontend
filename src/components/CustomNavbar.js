@@ -11,7 +11,7 @@ export default function CustomNavbar() {
           Barney Napier
         </Link>
         <span className="navtabs">
-          <CustomNavlink to="/" text="Home" />
+          <CustomNavlink to="/home" text="Home" />
           <CustomNavlink to="/about" text="About" />
         </span>
       </nav>
