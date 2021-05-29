@@ -1,6 +1,7 @@
 .div-tagbar {
   margin-bottom: 15px;
   padding: 10px;
+  max-width: 100%;
 }
 
 .tagbutton {
