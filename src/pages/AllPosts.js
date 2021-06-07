@@ -9,7 +9,7 @@ export default function AllPostsPage() {
   const history = useHistory();
 
   const [posts, setPosts] = React.useState([]);
-  const [tag, setTag] = React.useState("All");
+  const [tag, setTag] = React.useState("all");
   const [tags, setTags] = React.useState([]);
 
   React.useEffect(() => {
@@ -25,7 +25,7 @@ export default function AllPostsPage() {
       .then((res) => res.json())
       .then((data) => data.alltags)
       .then((data) => {
-        data.splice(0, 0, "All");
+        data.splice(0, 0, "all");
         return data;
       })
       .then((data) => {
@@ -38,23 +38,20 @@ export default function AllPostsPage() {
     <div className="reactWrapper">
       <CustomNavbar />
       <div className="content">
-        <div className="div-tagbar">
-          {tags.map((t) => (
-            <Link
-              className="tagbutton"
-              onClick={() => setTag(t)}
-              style={{
-                borderBottomColor: tag === t ? "black" : "transparent",
-              }}
-            >
-              {t}
-            </Link>
-          ))}
-        </div>
+        <form className="form-tagselect">
+          <select
+            className="select-tagselect"
+            onChange={(e) => setTag(e.target.value)}
+          >
+            {tags.map((t) => (
+              <option>{t}</option>
+            ))}
+          </select>
+        </form>
         <ul>
           {posts
             .filter((p) => {
-              if (tag === "All") {
+              if (tag === "all") {
                 return p;
               } else {
                 return p.tags.includes(tag);

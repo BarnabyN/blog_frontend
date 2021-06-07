@@ -1,7 +1,15 @@
-.div-tagbar {
-  margin-bottom: 15px;
+.form-tagselect {
+  margin: 0 auto;
   padding: 10px;
-  max-width: 100%;
+}
+
+.select-tagselect {
+  border: none;
+  font-size: inherit;
+  color: black;
+  background-color: whitesmoke;
+  border-bottom: solid black 1px;
+  outline: none;
 }
 
 .tagbutton {
