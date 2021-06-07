@@ -7,30 +7,27 @@ export default function AboutPage() {
       <CustomNavbar />
       <div className="content">
         <span>
-          I studied Economics at Bath Uni and am now working as a portfolio
-          trader at Morgan Stanley. Beyond that, I like to read about and work
-          on things that interest me. The main ones are:
+          I studied Economics at Bath University and am now working as a
+          portfolio trader at Morgan Stanley. Beyond that, I like to read about
+          and work on things that interest me. The main ones are:
         </span>
 
         <ul>
-          <li>Economics & Finance</li>
-          <ul>
-            <li>Factor investing and statistical risk premia</li>
-            <li>Algorithmic trading</li>
-            <li>Game theory</li>
-            <li>Behavioural economics</li>
-          </ul>
-          <li>Computer Science</li>
-          <ul>
-            <li>Machine learning</li>
-            <li>Website design</li>
-            <li>Algorithm design</li>
-          </ul>
-          <li>Psychology</li>
-          <ul>
-            <li>Behavioural biases</li>
-            <li>How actions and habits affect our brain</li>
-          </ul>
+          <li>
+            Economics & Finance - Mainly factor investing, statistical risk
+            premia, systematic trading and behavioural economics
+          </li>
+
+          <li>
+            Computer Science - Machine learning, website design, algorithm
+            design and general programming problems
+          </li>
+
+          <li>
+            Psychology - Behavioural biases and how both actions and habits
+            affect our brain
+          </li>
+
           <li>Chess</li>
           <li>Poker</li>
         </ul>
@@ -44,13 +41,22 @@ export default function AboutPage() {
           This is a website I am working on with a friend of mine. The goal is
           to make a <i>good</i> online reading tracker and review tool. Sites
           like goodreads are ancient in their architecture and must be improved
-          upon, thats what we are trying to do.
+          upon, thats what we are trying to do. You can follow the development
+          on the{" "}
+          <a
+            href="https://github.com/barney-n/libry-frontend"
+            target="_blank"
+            className="link"
+          >
+            github page
+          </a>
+          .
         </span>
         <h3>Nanovert</h3>
         <span>
           I helped some friends create a company called{" "}
           <a
-            href="https://nano-vert.co.uk/promotions"
+            href="https://www.nanovert.co.uk/"
             target="_blank"
             className="link"
           >
