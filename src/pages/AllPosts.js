@@ -41,10 +41,10 @@ export default function AllPostsPage() {
         <form className="form-tagselect">
           <select
             className="select-tagselect"
-            onChange={(e) => setTag(e.target.value)}
+            onChange={(e) => setTag(e.target.value.toLowerCase())}
           >
             {tags.map((t) => (
-              <option>{t}</option>
+              <option>{t[0].toUpperCase() + t.substring(1)}</option>
             ))}
           </select>
         </form>
