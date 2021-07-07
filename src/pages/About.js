@@ -7,9 +7,11 @@ export default function AboutPage() {
       <CustomNavbar />
       <div className="content">
         <span>
-          I studied Economics at Bath University and am now working as a
-          portfolio trader at Morgan Stanley. Beyond that, I like to read about
-          and work on things that interest me. The main ones are:
+          It's commonly said that explaining something helps you learn it, so
+          you could say I'm selfishly using the this blog and its reader(s) for
+          my own benefit. However, I prefer to think of it as an interested
+          observer's perspective on how things work. I'll most likely focus my
+          writing on the below topics.
         </span>
 
         <ul>
@@ -36,7 +38,7 @@ export default function AboutPage() {
           Since starting work my little projects have taken a backseat, but the
           main ones that I've worked on are:
         </span>
-        <h3>Lectio</h3>
+        <h3>Libry</h3>
         <span>
           This is a website I am working on with a friend of mine. The goal is
           to make a <i>good</i> online reading tracker and review tool. Sites
@@ -69,8 +71,8 @@ export default function AboutPage() {
         </span>
         <h3>This website</h3>
         <span>
-          Beyond those above, I spent time tweaking this website to look
-          different, or simply adding something to the front page.
+          Beyond those above, I spend time writing essays, tweaking code and
+          improving designs on my website.
         </span>
       </div>
     </div>

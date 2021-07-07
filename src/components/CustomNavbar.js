@@ -8,7 +8,7 @@ export default function CustomNavbar() {
     <div className="navbar">
       <nav expand="md" sticky="top">
         <Link className="navbrand" to={"/home"}>
-          Barney Napier
+          General Perceptions
         </Link>
         <span className="navtabs">
           <CustomNavlink to="/home" text="Home" />
