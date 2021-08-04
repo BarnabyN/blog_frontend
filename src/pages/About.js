@@ -11,7 +11,7 @@ export default function AboutPage() {
           you could say I'm selfishly using the this blog and its reader(s) for
           my own benefit. However, I prefer to think of it as an interested
           observer's perspective on how things work. I'll most likely focus my
-          writing on the below topics.
+          writing on the below topics, but no promises.
         </span>
 
         <ul>
