@@ -4,7 +4,7 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
 import AboutPage from "./pages/About";
 import PostPage from "./pages/Post";
-import AllPostsPage from "./pages/AllPosts";
+import AllPosts from "./pages/AllPosts";
 import AdminLogin from "./pages/AdminLogin";
 import AdminCreatePost from "./pages/AdminCreatePost";
 import AdminEditPost from "./pages/AdminEditPost";
@@ -16,7 +16,7 @@ export default function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/home">
-          <AllPostsPage />
+          <AllPosts />
         </Route>
         <Route path="/about">
           <AboutPage />
